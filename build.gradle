@@ -1,0 +1,20 @@
+
+plugins {
+    id "war"
+    id "org.gretty" version "3.0.1"
+}
+
+version=0.1
+sourceCompatibility=1.8
+
+
+repositories {
+    mavenCentral()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+}
+
+dependencies {
+    providedCompile 'javax.servlet:servlet-api:2.5'
+}
